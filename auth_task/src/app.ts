@@ -13,7 +13,7 @@ app.use(handleCustomError as any);
 app.get("/", (req, res) => {
   res.send("Welcome to the JWT Auth API");
 });
-
+// s;ldsds[dp[dsd]]
 app.listen(PORT, () => {
   console.log(`✅ App is running on http://localhost:${PORT}`);
 });
