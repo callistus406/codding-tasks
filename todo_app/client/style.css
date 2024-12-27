@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4CAF50, #66BB6A);
+    color: #333;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.todo-input input:focus {
+    border-color: #4CAF50;
+}
+
+.todo-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.todo-input button:hover {
+    background-color: #388E3C;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#todoList li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+#todoList li:hover {
+    background: #f1f1f1;
+}
+
+#todoList li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#todoList button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#todoList button:hover {
+    background-color: #E64A19;
+}
+
+@media (max-width: 600px) {
+    .todo-input {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .todo-input input {
+        width: 100%;
+    }
+
+    .todo-input button {
+        width: 100%;
+    }
+}
+
+
+#errorContainer {
+    background-color: #ffcccc;
+    color: #b71c1c;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b71c1c;
+    border-radius: 4px;
+    display: none;
+    font-size: 14px;
+}
